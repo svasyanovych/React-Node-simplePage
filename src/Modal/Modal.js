@@ -20,9 +20,9 @@ export default class Modal extends React.Component {
                 {this.state.isOpen && (
                     <div className="modal">
                         <div className="modal-body">
-                            <h1>Modal title</h1>
-                            <p>I am modal</p>
-                            <button onClick={() => this.setState({ isOpen: false })}>Close modal</button>
+                            <h1>Modal</h1>
+                            <p>The main idea was taken from <a href="https://www.youtube.com/watch?v=xJZa2_aldDs" target="_blank">here</a></p>
+                            <button onClick={() => this.setState({ isOpen: false })} className="modal-btn">Close modal</button>
                         </div>
                     </div>
                 )}
