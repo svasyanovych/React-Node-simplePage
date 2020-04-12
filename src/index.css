@@ -18,13 +18,66 @@ code {
   width: 600px;
 }
 
-.rm{
-  background: red;
+.rm {
+  background: #f2f2f2;
   border-radius: 50%;
-  color: white;
+  color: #bfbfbf;
   border: none;
 }
 
 .done {
   text-decoration: line-through;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid;
+  border-color: #ccc transparent #ccc transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.add-todo-btn {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  display: inline-block;
+  border: 1px solid #bfbfbf;
+  color: #8c8c8c;
+  border-radius: 5px 5px 5px 5px;
+  font-family: Verdana;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  box-shadow: inset 0 1px 0 0 #fff, inset 0 -1px 0 0 #d9d9d9, inset 0 0 0 1px #f2f2f2, 0 2px 4px 0 #f2f2f2;
+  text-shadow: 0 1px 0 #fff;
+  background-image: linear-gradient(to top, #f2f2f2, #f2f2f2);
+  background-color: #f2f2f2;
+}
+
+.add-todo-btn:hover,
+.add-todo-btn:active {
+  border: 1px solid #8c8c8c;
+  color: #8c8c8c;
+  box-shadow: inset 0 1px 0 0 #ffffff, inset 0 -1px 0 0 #d9d9d9, inset 0 0 0 1px #f2f2f2;
+  background-color: #f2f2f2;
 }
